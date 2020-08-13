@@ -569,7 +569,7 @@ $(BUILD_DIR_LINK): $(BUILD_DIR)/.linked
 # is currently correct, then delete the one in the OTHER_BUILD_DIR in case it
 # exists and $(DEBUG) is toggled later.
 $(BUILD_DIR)/.linked:
-	@ mkdir -p $(BUILD_DIR)
+#	@ mkdir -p $(BUILD_DIR)
 	@ $(RM) $(OTHER_BUILD_DIR)/.linked
 	@ $(RM) -r $(BUILD_DIR_LINK)
 	@ ln -s $(BUILD_DIR) $(BUILD_DIR_LINK)
